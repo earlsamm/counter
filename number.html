@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<center>
+			<h1 class="number" id="number">1</h1>
+
+			<br />
+			<br />
+			<button onclick="increaseNumber()">Increment</button>
+			<br />
+			<br />
+			<button onclick="decreaseNumber()">Decrement</button>
+		</center>
+
+		<script>
+			let increaseNumber = () => {
+				// function increaseNumber(){
+
+				let numa = document.querySelector(".number");
+				let num = parseInt(numa.textContent);
+				numa.textContent = num + 1;
+			};
+
+			let decreaseNumber = () => {
+				let numa = document.querySelector(".number");
+				let num = parseInt(numa.textContent);
+				numa.textContent = num - 1;
+			};
+		</script>
+	</body>
+</html>
